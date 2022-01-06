@@ -30,7 +30,7 @@ while True:
 
 #마지막으로 남은 수 에 대하여 1씩 빼기
 result += (n-1)
-print(result)</code><pre>
+print(result)</code></pre>
    
 ### 방법 1   
 <pre><code>#n,k를 공백을 기준으로 구분하여 입력 받기
