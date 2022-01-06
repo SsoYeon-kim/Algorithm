@@ -5,7 +5,7 @@
 2. N을 K로 나눕니다.
 N과 K가 주어질 때 N이 1이 될 때까지 1번 혹은 2번의 과정을 수행해야 하는 최소 횟수를 구하는 프로그램을 작성하세요.   
    
-### 방법 1   
+#### 방법 1   
 <pre><code>#n,k를 공백을 기준으로 구분하여 입력 받기
 n,k = map(int, input().split())
 
@@ -32,7 +32,7 @@ while True:
 result += (n-1)
 print(result)</code></pre>
    
-### 방법 1   
+#### 방법 2   
 <pre><code>#n,k를 공백을 기준으로 구분하여 입력 받기
 n,k = map(int, input().split())
 
