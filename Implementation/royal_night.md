@@ -14,3 +14,28 @@
 나이트의 8가지 경로를 하나씩 확인하며 각 위치로 이동이 가능한지 확인
 - 리스트를 이용하여 8가지 방향에 대한 방향 벡터를 정의
 
+#### 방법 1
+<pre><code>#현재 나이트의 위치 입력받기
+location = input()
+
+#문자를 아스키코드로 바꾼 값 - a를 아스키코드로 바꾼 값을 빼고 + 1
+#column = int(ord(location[0])) - int(ord('a')) + 1
+column = int(ord(location[0])) - 96
+row = int(location[1])
+
+#나이트가 이동할 수 있는 8가지 방향 정의
+#2차원 배열로 dx,dy를 사용하지 않고 하나의 리스트를 이용한 방법
+steps = [(-2,1), (-1,-2), (1,-2), (2,-1), (2,1), (1,2), (-1,2), (-2,1)]
+
+count = 0
+
+for step in steps:
+  n_row = row + step[0]
+  n_cloumn = column + step[1]
+  if n_row >= 1 and n_row <= 8 and n_column >= 1 and n_column <= 8:
+    count += 1
+
+print(count)</code></pre>
+   
+#### 방법 2   
+<pre><code>
