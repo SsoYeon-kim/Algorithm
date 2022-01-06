@@ -38,4 +38,23 @@ for step in steps:
 print(count)</code></pre>
    
 #### 방법 2   
-<pre><code>
+<pre><code>#현재 나이트의 위치 입력받기
+location = input()
+
+#문자를 아스키코드로 바꾼 값 - a를 아스키코드로 바꾼 값을 빼고 + 1
+#column = int(ord(location[0])) - int(ord('a')) + 1
+column = int(ord(location[0])) - 96
+row = int(location[1])
+
+dx = [-2,-2,2,2,-1,-1,1,1]
+dy = [-1,1,-1,1,-2,2,-,2,2]
+
+count = 0
+
+for i in range(8):
+  n_row = row + dx[i]
+  n_cloumn = column + dy[i]
+  if n_row >= 1 or n_row <= 8 and n_column >= 1 and n_column <= 8:
+    count += 1
+
+print(count)</code></pre>
