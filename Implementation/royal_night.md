@@ -47,7 +47,7 @@ column = int(ord(location[0])) - 96
 row = int(location[1])
 
 dx = [-2,-2,2,2,-1,-1,1,1]
-dy = [-1,1,-1,1,-2,2,-,2,2]
+dy = [-1,1,-1,1,-2,2,-2,2]
 
 count = 0
 
