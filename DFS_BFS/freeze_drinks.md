@@ -50,7 +50,7 @@ for i in range(n):
     if dfs(i, j) == True:
       count += 1
 
-print(result)</code></pre>
+print(count)</code></pre>
    
 #### 방법 2   
 <pre><code>n, m = map(int, input().split())
