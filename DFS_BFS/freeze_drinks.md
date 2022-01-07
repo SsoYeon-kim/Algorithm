@@ -29,7 +29,7 @@ def dfs(x, y):
     dfs(x + 1, y)
     dfs(x, y + 1)
     return True
-  return False
+  return False #1을 만났을 
 
 #N. M을 공백을 기준으로 구분하여 입력 받기
 n, m = map(int, input().split())
@@ -41,11 +41,11 @@ for i in range(n):
   graph.append(list(map(int, input())))
 
 #모든 노드(위치)에 대하여 음료수 채우기
-result = 0
+count = 0
 
 for i in range(n):
   for j in range(m):
     if dfs(i, j) == True:
-      result += 1
+      count += 1
 
 print(result)</code></pre>
