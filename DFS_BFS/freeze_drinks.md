@@ -57,7 +57,7 @@ print(count)</code></pre>
 ice = []
 
 for i in range(n):
-  ice.append(list(map(int, input())))
+  ice.append(list(input()))
 
 def dfs(i,j):
   if i <= -1 or i >= n or j <= -1 or j >=m:
