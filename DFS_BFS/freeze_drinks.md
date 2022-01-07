@@ -26,7 +26,7 @@ def dfs(x, y):
     #해당 노드 방문 처리
     graph[x][y] = 1
     #상, 하, 좌, 우의 위치들도 모두 재귀적으로 호출
-    dfs(x -1. y)
+    dfs(x -1, y)
     dfs(x, y - 1)
     dfs(x + 1, y)
     dfs(x, y + 1)
