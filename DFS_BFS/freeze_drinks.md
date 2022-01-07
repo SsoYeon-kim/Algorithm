@@ -81,6 +81,8 @@ for i in range(n):
 
 print(count)</code></pre>
    
+   
+   
 그래프를 채울 때 int형으로 저장할 것인지 문자열로 저장할 것인지의 차이   
    
 <pre><code>for i in range(n):
