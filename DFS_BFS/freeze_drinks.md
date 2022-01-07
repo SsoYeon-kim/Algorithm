@@ -14,6 +14,8 @@ DFS 혹은 BFS로 해결 가능
 2. 방문한 지점에서 다시 상, 하, 좌, 우를 살펴보면서 방문을 진행하는 과정을 반복하면, 연결된 모든 지점을 방문할 수 있음
 3. 모든 노드에 대하여 1~2번의 과정을 반복하며, 방문하지 않은 지점의 수를 카운트
    
+#### 방법 1   
+   
 <pre><code>#DFS로 특정 노드를 방문하고 연결된 모든 노드들도 방문
 def dfs(x, y):
   #주어진 범위를 벗어나는 경우에는 즉시 종료
@@ -49,3 +51,32 @@ for i in range(n):
       count += 1
 
 print(result)</code></pre>
+   
+#### 방법 2   
+<pre><code>n, m = map(int, input().split())
+ice = []
+
+for i in range(n):
+  ice.append(list(map(int, input())))
+
+def dfs(i,j):
+  if i <= -1 or i >= n or j <= -1 or j >=m:
+    return False
+
+  if ice[i][j] == '0':
+    ice[i][j] = '1'
+    dfs(i+1, j)
+    dfs(i-1, j)
+    dfs(i, j-1)
+    dfs(i, j+1)
+    return True
+  return False
+
+count = 0
+
+for i in range(n):
+  for j in range(m):
+    if dfs(i,j):
+      count += 1
+
+print(count)</code></pre>
