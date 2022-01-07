@@ -81,4 +81,13 @@ for i in range(n):
 
 print(count)</code></pre>
    
-그래프를 채울 때 int형으로 저장할 것인지 문자열로 저장할 것인지의 차이 
+그래프를 채울 때 int형으로 저장할 것인지 문자열로 저장할 것인지의 차이   
+   
+<pre><code>for i in range(n):
+  graph.append(list(map(int, input())))</code></pre>
+ - 공백으로 구성되어 있지 않고 0과 1로 구성된 문자열을 입력 받을 시 각 원소에 대해 int형으로 바꾼 후 리스트로 만듦
+
+   
+<pre><code>for i in range(n):
+  ice.append(list(input()))</code></pre>
+- 문자열로 리스트에 추가, 이후 '0' or '1'의 형식으로 
