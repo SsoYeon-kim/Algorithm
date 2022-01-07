@@ -31,7 +31,7 @@ def dfs(x, y):
     dfs(x + 1, y)
     dfs(x, y + 1)
     return True
-  return False #1을 만났을 
+  return False #1을 만났을 때 
 
 #N. M을 공백을 기준으로 구분하여 입력 받기
 n, m = map(int, input().split())
