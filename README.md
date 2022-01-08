@@ -62,11 +62,11 @@ for i in range(4):
    - 파이썬에서는 deque라이브러리를 사용 (list를 이용하는 것이 시간 복잡도 더 증가)   
 <pre><code>from collections import deque</code></pre>   
    
-   - 최상단 원소부터 출력 (나가고자 하는 원소부터) => [::-1]   
-   - 최하단 원소부터 출력 (오래된 것부터)
+      - 최상단 원소부터 출력 (나가고자 하는 원소부터) => [::-1]   
+      - 최하단 원소부터 출력 (오래된 것부터)
    
-   - append로 삽입, popleft로 삭제   
-   - queue.reverse()를 통해 출력   
+      - append로 삽입, popleft로 삭제   
+      - queue.reverse()를 통해 출력   
    
 - 재귀함수(Recursive Function)   
 문제 풀이에 사용할 때는 종료조건을 반드시 명시해야 함(함수 시작 부분에 명시)   
