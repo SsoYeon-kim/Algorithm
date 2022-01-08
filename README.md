@@ -29,6 +29,19 @@ Algorithm with Python
 일반적으로 알고리즘 문제에서의 2차원 공간을 행렬(matrix)의 의미로 사용   
 시뮬레이션 및 완전 탐색 문제에서는 2차원 공간에서의 방향 벡터가 자주 활용   
    
+<pre><code>#동, 북, 서, 남
+dx = [0, -1, 0, 1]
+dy = [1, 0, -1, 0]
+
+#현재 위치
+x, y = 2, 2
+
+for i in range(4):
+  #다음 위치
+  nx = x + dx[i]
+  ny = y + dy[i]
+  print(nx, ny)</code></pre>   
+   
 <예시>   
 - 상하좌우
 - 시각
@@ -41,7 +54,7 @@ Algorithm with Python
    
 대표적인 그래프 탐색 알고리즘 : DFS, BFS   
    
-- 스택 : LIFO
+* 스택 : LIFO
 파이썬에서는 list로 구현 (별도 라이브러리 필요 X)   
 append로 삽입, pop으로 삭제   
    
@@ -49,6 +62,14 @@ append로 삽입, pop으로 삭제
 파이썬에서는 deque라이브러리를 사용 (list를 이용하는 것이 시간 복잡도 더 증가)   
 <pre><code>from collections import deque</code></pre>   
    
+최상단 원소부터 출력 (나가고자 하는 원소부터) => [::-1]   
+최하단 원소부터 출력 (오래된 것부터)
+   
 append로 삽입, popleft로 삭제   
-queue.reverse()를 통해 
+queue.reverse()를 통해 출력   
+   
+- 재귀함수(Recursive Function)   
+문제 풀이에 사용할 때는 종료조건을 반드시 명시해야 함(함수 시작 부분에 명시)   
+   
+ex ) 팩토리얼, 최대공약수(GCD)_유클리드 호제법   
 
