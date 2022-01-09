@@ -185,6 +185,22 @@ print(array) </code></pre>
    - 앞쪽의 원소는 이미 정렬되어 있다고 가정
    - 뒤쪽의 원소를 앞쪽의 원소들의 위치 중 한 곳으로 삽입 (앞쪽 원소들과 비교해 작다면 왼쪽 크다면 오른쪽)   
    
-<pre><code></code></pre>
+<pre><code>array = [7, 5, 9, 0, 3, 1, 6, 2, 4, 8]
+
+for i in range(1, len(array)):
+  for j in range(i, 0, -1): #인덱스 i부터 1까지 1씩 감소하며 반복
+    if array[j] < array[j - 1]:
+      array[j], array[j - 1] = array[j - 1], array[j]
+    else: #자기보다 작은 데이터를 만나면 그 자리에서 멈춤
+      break
+
+print(array)</code></pre>   
+   
+시간 복잡도는 O(N²)   
+현재 리스트의 데이터가 거의 정렬되어 있는 상태라면   
+최선의 경우 O(N)의 시간 복잡도를 가짐      
+   
+- 퀵 정렬   
+   - ㅇㅇ
 
 
