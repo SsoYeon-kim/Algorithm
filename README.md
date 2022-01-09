@@ -178,7 +178,7 @@ for i in range(len(array)):
 
 print(array) </code></pre>   
    
-시간 복잡도는 O(N**2)   
+시간 복잡도는 O(N²)   
    
 - 삽입 정렬   
    - 처리되지 않은 데이터를 하나씩 골라 적절한 위치에 삽입
