@@ -1,7 +1,7 @@
 # Algorithm
 Algorithm with Python   
    
-- 그리디(#그리디(탐욕법))
+- [그리디](#그리디(탐욕법))
 - 구현 (시뮬레이션과 완전 탐색)
 - 그래프 탐색 알고리즘 (DFS/BFS)   
 - 정렬
