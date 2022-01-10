@@ -23,6 +23,7 @@
 <pre><code>import heapq
 import sys
 
+# 입력 후 엔터 줄바꿈됨 (입력받은 문자열은 개행문자(\n)을 포함)
 input = sys.stdin.readline
 INF = int(1e9)  #무한을 의미하는 값으로 10억을 설정
 
